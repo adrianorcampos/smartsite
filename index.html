@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Smart3D teste</title>
+	<meta name="author" content="Adriano Rocha Campos">
+	<meta name="description" content="Fiz para testar o uso de modelos 3D no site da SmartSolutions...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles2.css">
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+	<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+
+<body>
+	
+	<section class="carousel" aria-label="Gallery">
+		<ol class="carousel__viewport">
+			<li id="carousel__slide1" tabindex="0" class="carousel__slide">
+				<div class="carousel__snapper">
+					<a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+					<a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+				</div>
+				<model-viewer id="modelo1" class="model_viewer" src="/assets/dento.glb" auto-rotate camera-controls>
+				</model-viewer>
+				<div class="card">
+					<h1 class="card_header">Guia dentossuportado</h1>
+					<p class="card_body">
+						Guia cirúrgica fabricada em resina biocompatível, customizada e confeccionada a partir de um planejamento virtual
+						minucioso aprovado pelo dentista. Essa tecnologia torna o procedimento mais preciso ao indicar os melhores pontos
+						de inclinação e profundidade para a perfuração e instalação dos implantes.
+					</p>	
+				</div>
+				<p class="arraste">
+					Arraste para os lados &gt;&gt;&gt;
+				</p>
+			</li>
+			<li id="carousel__slide2" tabindex="0" class="carousel__slide">
+				<div class="carousel__snapper"></div>
+				<a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+				<a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+				<model-viewer id="modelo1" class="model_viewer" src="/assets/muco.glb" auto-rotate camera-controls>
+				</model-viewer>
+				<div class="card">
+					<h1 class="card_header">Guia mucosuportado</h1>
+					<p class="card_body">
+						Guia cirúrgica fabricada em resina biocompatível, customizada e confeccionada a partir de um planejamento virtual
+						minucioso aprovado pelo dentista. Essa tecnologia torna o procedimento mais preciso ao indicar os melhores pontos
+						de inclinação e profundidade para a perfuração e instalação dos implantes.
+					</p>
+				</div>
+				<p class="arraste">
+					&lt;&lt;&lt; Arraste para os lados &gt;&gt;&gt;
+				</p>
+			</li>
+			<li id="carousel__slide3" tabindex="0" class="carousel__slide">
+				<div class="carousel__snapper"></div>
+				<a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+				<a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+				<model-viewer id="modelo1" class="model_viewer" src="/assets/rog.glb" auto-rotate camera-controls>
+				</model-viewer>
+				<div class="card">
+					<h1 class="card_header">ROG</h1>
+					<p class="card_body">
+						Prototipagem de segmentos maxilares para auxílio em regenerações ósseas guiadas, simplificando a conformação das
+						telas de titânio ou membranas PTFE e posicionamento de parafusos. Auxílio em restauração dento alveolares
+						imediatas, onde o efeito será melhor visualizado, contribuindo na modelação do autógeno.
+					</p>
+				</div>
+				<p class="arraste">
+					&lt;&lt;&lt; Arraste para os lados
+				</p>
+			</li>
+		</ol>
+	</section>
+
+	<script src="" async defer></script>
+</body>
+
+</html>
